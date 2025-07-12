@@ -38,8 +38,6 @@ Applicable scenarios:
 
   const transport = new StdioServerTransport()
   server.connect(transport)
-
-  console.log('Server started')
 }
 
 main()
