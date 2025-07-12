@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/w2xi/v-rapper-mcp",
   "scripts": {
+    "prepublish": "tsdown",
     "build": "tsdown",
     "dev": "tsdown --watch",
     "release": "bumpp --commit --tags --push && npm publish",
