@@ -21,7 +21,8 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "release": "bumpp --commit --tags --push && npm publish",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "inspector": "npx @modelcontextprotocol/inspector node dist/cli.js"
   },
   "devDependencies": {
     "bumpp": "^10.2.0",
