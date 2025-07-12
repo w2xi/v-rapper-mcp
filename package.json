@@ -1,0 +1,40 @@
+{
+  "name": "v-rapper-mcp",
+  "version": "0.0.1",
+  "private": true,
+  "description": "v-rapper MCP server for Evan You",
+  "type": "module",
+  "bin": {
+    "v-rapper-mcp": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w2xi/v-rapper-mcp.git"
+  },
+  "homepage": "https://github.com/w2xi/v-rapper-mcp",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "release": "bumpp --commit --tags --push && npm publish",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "bumpp": "^10.2.0",
+    "prettier": "^3.6.2",
+    "tsdown": "latest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "v-rapper-mcp",
+    "mcp",
+    "mcp-server"
+  ],
+  "author": "w2xi",
+  "license": "MIT"
+}
