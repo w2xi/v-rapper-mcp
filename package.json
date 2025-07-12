@@ -17,9 +17,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "prepublish": "tsdown",
-    "build": "tsdown",
-    "dev": "tsdown --watch",
+    "prepublish": "tsup",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "release": "bumpp --commit --tags --push && npm publish",
     "format": "prettier --write .",
     "inspector": "npx @modelcontextprotocol/inspector node dist/cli.js"
@@ -27,7 +27,8 @@
   "devDependencies": {
     "bumpp": "^10.2.0",
     "prettier": "^3.6.2",
-    "tsdown": "latest"
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.15.1"
