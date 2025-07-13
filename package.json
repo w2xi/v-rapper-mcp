@@ -1,6 +1,6 @@
 {
   "name": "v-rapper-mcp",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "v-rapper MCP server for Evan You",
   "type": "module",
   "bin": {
