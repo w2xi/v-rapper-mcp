@@ -16,6 +16,11 @@ function main() {
     }
   )
 
+  process.on('SIGINT', async () => {
+    await server.close()
+    process.exit(0)
+  })
+
   server.tool(
     'v-rapper',
     `Get Evan You's v-rapper video URL

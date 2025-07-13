@@ -21,10 +21,11 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "release": "bumpp --commit --tags --push && npm publish",
-    "format": "prettier --write .",
+    "format": "prettier --write cli.ts",
     "inspector": "npx @modelcontextprotocol/inspector node dist/cli.js"
   },
   "devDependencies": {
+    "@types/node": "^24.0.13",
     "bumpp": "^10.2.0",
     "prettier": "^3.6.2",
     "tsup": "^8.5.0",
